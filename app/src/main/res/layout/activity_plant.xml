@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/cream"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlantActivity"
+    android:theme="@style/Theme.AppCompat">
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="69dp"
+        android:layout_height="78dp"
+        android:background="#F5F5F5"
+        android:contentDescription="@string/plants_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/home_outline" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="415dp"
+        android:layout_height="621dp"
+        android:background="@color/cream"
+        android:measureAllChildren="false"
+        android:orientation="vertical"
+        android:theme="@style/Theme.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.292"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/leavesButton"
+            android:layout_width="370dp"
+            android:layout_height="67dp"
+            android:layout_gravity="top|center_horizontal"
+            android:backgroundTint="@color/light_green"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:foregroundTint="@color/black"
+            android:text="Leaves"
+            android:layout_marginTop="75sp"
+            android:textColor="@color/dark_green"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/stemsButton"
+            android:layout_width="370dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginBottom="100sp"
+            android:backgroundTint="@color/light_green"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:foregroundTint="@color/black"
+            android:text="Stems"
+            android:textColor="@color/dark_green"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/flowersButton"
+            android:layout_width="370dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center|center_horizontal"
+            android:backgroundTint="@color/light_green"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:foregroundTint="@color/black"
+            android:text="Flowers"
+            android:textColor="@color/dark_green"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/rootsButton"
+            android:layout_width="370dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="100sp"
+            android:backgroundTint="@color/light_green"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:foregroundTint="@color/black"
+            android:text="Roots"
+            android:textColor="@color/dark_green"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

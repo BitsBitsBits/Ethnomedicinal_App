@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/cream"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:theme="@style/Theme.AppCompat">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="55dp"
+        android:defaultFocusHighlightEnabled="false"
+        android:fontFamily="sans-serif-light"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/ethnomedicinal_app"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="5.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="112dp"
+        android:defaultFocusHighlightEnabled="false"
+        android:fontFamily="sans-serif-light"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/menu"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="403dp"
+        android:layout_height="457dp"
+        android:background="@color/cream"
+        android:measureAllChildren="false"
+        android:orientation="vertical"
+        android:theme="@style/Theme.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.292"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:background="@drawable/green_circle"
+            android:drawablePadding="-15sp"
+            android:drawableTop="@drawable/camera_outline"
+            android:paddingTop="32sp"
+            android:text="Camera"
+            android:textColor="@color/cream"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/green_circle"
+            android:drawablePadding="-15sp"
+            android:drawableTop="@drawable/settings_outline"
+            android:paddingTop="32sp"
+            android:text="Settings"
+            android:textColor="@color/cream"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/plantsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/green_circle"
+            android:drawablePadding="-15sp"
+            android:drawableTop="@drawable/plants_outline"
+            android:paddingTop="32sp"
+            android:text="Plants"
+            android:textColor="@color/cream"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

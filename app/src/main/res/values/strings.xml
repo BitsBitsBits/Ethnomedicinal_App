@@ -1,0 +1,11 @@
+<resources>
+    <color name="dark_green">#1D7144</color>
+    <color name="light_green">#76DD94</color>
+    <color name="cream">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Ethnomedicine</string>
+    <string name="ethnomedicinal_app">Ethnomedicinal App</string>
+    <string name="menu">Menu</string>
+    <string name="plants_home">plants_home</string>
+</resources>
